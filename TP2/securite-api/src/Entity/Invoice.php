@@ -23,7 +23,7 @@ class Invoice
     private $amount;
 
     /**
-     * @ORM\Column(type="datetime_immutable")
+     * @ORM\Column(type="datetime")
      */
     private $sendAt;
 
