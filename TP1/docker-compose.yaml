@@ -1,0 +1,12 @@
+version: '3.7'
+services:
+  reverse-proxy:
+    image: nginx
+    volumes:
+      - /etc/letsencrypt/:/etc/letsencrypt/
+    ports:
+      - 80:80
+
+  whoami:
+    image: containous/whoami
+    container_name: whoami
